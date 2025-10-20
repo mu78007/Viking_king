@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography Showcase</title>
+
+  <!-- 3 Different Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+     text-align: center;
+        font-family: 'Playfair Display', serif;
+        color: #5a8fc4;
+    }
+
+    h2 {
+      font-family: 'Pacifico',   ;
+      text-align: left;
+      color: #2c3e50;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Various Font Sizes (different units) */
+    .small-text { font-size: 12px; }   /* pixels */
+    .medium-text { font-size: 1.2em; } /* relative to parent */
+    .large-text { font-size: 2rem; }   /* relative to root element */
+
+    /* Text Alignment Examples */
+    .left { text-align: left; }
+    .center { text-align: center; }
+    .right { text-align: right; }
+    .justify { text-align: justify; }
+
+    /* Text Decoration & Transformation */
+    .decorations {
+      text-decoration: underline overline;
+      text-transform: capitalize;
+      color: darkblue;
+    }
+
+    /* Text Shadow Effects */
+    .shadow {
+      font-size: 24px;
+      color: #e74c3c;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Typography Showcase</h1>
+
+  <h2>Google Fonts Examples</h2>
+  <p>This text uses Playfair Display font.</p>
+  <p>This text uses Pacifico font.</p>
+  <p >This text uses Roboto font.</p>
+
+  <h2>Font Size Examples</h2>
+  <p class="small-text">This is small text (12px).</p>
+  <p class="medium-text">This is medium text (1.2em).</p>
+  <p class="large-text">This is large text (2rem).</p>
+
+  <h2>Text Alignment</h2>
+  <p class="left">Left aligned text example.</p>
+  <p class="center">Center aligned text example.</p>
+  <p class="right">Right aligned text example.</p>
+  <p class="justify">This text is justified. It adjusts the spacing so that both edges of the paragraph are aligned with the left and right margins.</p>
+
+  <h2>Text Decoration and Transformation</h2>
+  <p class="decorations">this is an example of text decoration and transformation.</p>
+
+  <h2>Text Shadow Effect</h2>
+  <p class="shadow">This text has a shadow effect!</p>
+
+</body>
+</html>

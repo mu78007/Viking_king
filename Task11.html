@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    :root {
+  --primary-color: #0078ff;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+h1, h2 {
+  color: var(--primary-color);
+}
+.section {
+  padding: 50px 100px;
+  margin-bottom: 30px;
+}
+img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+</style>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="section">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I'm a web developer passionate about clean design and modern web technologies.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <img src="picture1.jpg" alt="image1">
+    <img src="Picture2.jpg" alt="image2">
+  </section>
+
+  <footer>
+    <p>© 2025 M. Murtaza | All rights reserved</p>
+  </footer>
+</body>
+</html>

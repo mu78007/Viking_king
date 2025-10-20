@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Effects Showcase</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      margin: 0;
+      padding: 50px;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+  
+    .gradient-text {
+      font-size: 48px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  
+    .form-section {
+      margin: 40px 0;
+      display: inline-block;
+      text-align: left;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      display: none;
+    }
+
+ 
+    .checkmark {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #3498db;
+      border-radius: 4px;
+      margin-right: 10px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    input[type="checkbox"]:checked + .checkmark {
+      background-color: #3498db;
+    }
+
+    .checkmark::after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      top: 2px;
+      left: 6px;
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    input[type="checkbox"]:checked + .checkmark::after {
+      opacity: 1;
+    }
+
+
+    .radio {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #e67e22;
+      border-radius: 50%;
+      margin-right: 10px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    input[type="radio"]:checked + .radio::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 8px;
+      height: 8px;
+      background: #e67e22;
+      border-radius: 50%;
+    }
+
+
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin: 40px auto;
+      animation: spin 1.2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+   
+    .clipped-text {
+      font-size: 42px;
+      font-weight: bold;
+      background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+      background-size: cover;
+      background-position: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 40px 0;
+    }
+
+
+    .shadow-box {
+      background: #fff;
+      padding: 30px;
+      width: 250px;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.1),
+        0 8px 20px rgba(0, 0, 0, 0.1),
+        inset 0 2px 4px rgba(255, 255, 255, 0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .shadow-box:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.2),
+        0 12px 30px rgba(0, 0, 0, 0.15),
+        inset 0 2px 4px rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>✨ Advanced Effects Showcase ✨</h1>
+
+
+  <div class="gradient-text">Gradient Text Effect</div>
+
+ 
+  <div class="form-section">
+    <h3>Custom Inputs</h3>
+    <label>
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      Subscribe to Newsletter
+    </label>
+
+    <label>
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      Accept Terms
+    </label>
+
+    <label>
+      <input type="radio" name="plan">
+      <span class="radio"></span>
+      Basic Plan
+    </label>
+
+    <label>
+      <input type="radio" name="plan">
+      <span class="radio"></span>
+      Premium Plan
+    </label>
+  </div>
+
+  <h3>CSS Loader</h3>
+  <div class="loader"></div>
+
+
+  <div class="clipped-text">Nature Inside Text</div>
+
+ 
+  <div class="shadow-box">
+    <h3>Shadow Box</h3>
+    <p>Multiple shadow layers add depth and realism.</p>
+  </div>
+
+</body>
+</html>

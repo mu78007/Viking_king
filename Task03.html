@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, ;
+      background-color: #5b5151;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #172b3f;
+      color: rgb(77, 106, 139);
+      padding: 30px;
+    }
+
+    section {
+      padding: 40px;
+      color: rgb(136, 36, 36);
+      text-align: center;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    /* 1️⃣ Solid Color Background */
+    .solid-bg {
+      background-color: #1c4f71; /* Blue color */
+    }
+
+    /* 2️⃣ Image Backgrounds with Different Repeat Patterns */
+    .image-repeat {
+      background-color: #408d63;
+      background-repeat: repeat;
+      color: rgb(99, 76, 76);
+    }
+
+    .image-no-repeat {
+      background-color: #8ead58;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-color: #acab4a;
+      color: rgb(236, 4, 147);
+    }
+
+    /* 3️⃣ Linear Gradient Background */
+    .linear-gradient {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+
+    /* 4️⃣ Radial Gradient Background */
+    .radial-gradient {
+      background: radial-gradient(circle, #74ebd5, #ACB6E5);
+    }
+
+    /* 5️⃣ Multiple Background Layers */
+    .multiple-bg {
+      background-image: 
+        url('https://via.placeholder.com/150/ffffff/000000?text=Pattern'),
+        linear-gradient(to right, #00c6ff, #0072ff);
+      background-repeat: repeat, no-repeat;
+      background-size: 100px 100px, cover;
+    }
+
+    /* 6️⃣ Background Blend Modes */
+    .blend-mode {
+      background-image: 
+        url('https://via.placeholder.com/600x400'),
+        linear-gradient(45deg, rgba(255,0,150,0.6), rgba(0,255,255,0.6));
+      background-blend-mode: multiply;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Background Gallery</h1>
+
+  <section class="solid-bg">
+    <h2>Solid Color Background</h2>
+    <p>This section has a simple solid blue background.</p>
+  </section>
+
+  <section class="image-repeat">
+    <h2>Image Background - Repeat</h2>
+    <p>This section has a repeating image background pattern.</p>
+  </section>
+
+  <section class="image-no-repeat">
+    <h2>Image Background - No Repeat</h2>
+    <p>This background image appears only once, centered.</p>
+  </section>
+
+  <section class="linear-gradient">
+    <h2>Linear Gradient Background</h2>
+    <p>This uses a smooth gradient from left to right.</p>
+  </section>
+
+  <section class="radial-gradient">
+    <h2>Radial Gradient Background</h2>
+    <p>This uses a circular gradient effect.</p>
+  </section>
+
+  <section class="multiple-bg">
+    <h2>Multiple Background Layers</h2>
+    <p>This combines an image pattern and a gradient together.</p>
+  </section>
+
+  <section class="blend-mode">
+    <h2>Background Blend Mode</h2>
+    <p>This uses a background image and color blend (multiply effect).</p>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Style</title>
+</head>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .image:hover {
+      transform: scale(1.05);
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.4s ease;
+    }
+
+    /* Rounded and Circular Images */
+    .rounded { border-radius: 15px; }
+    .circle { border-radius: 15px; }
+    .grayscale { border-radius: 15px; }
+
+    /* Borders and Shadows */
+    .bordered {
+      border: 5px solid #012b47;
+      box-shadow: 0 115px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Hover Effects and Transitions */
+    .image img:hover {
+      filter: brightness(67%);
+    }
+
+    /* CSS Filters */
+    .grayscale { filter: grayscale(100%); }
+    .sepia { filter: sepia(80%); }
+    .blur { filter: blur(2%); }
+    
+
+    /* Image Overlay with Text */
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(206, 142, 142, 0.6);
+      color: #684949;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .image:hover .overlay {
+      opacity: 1;
+    }
+
+ </style>
+<body>
+    <h1 id="kk">Image Styling Portfolio</h1>
+      <div class="gallery">
+    <div class="image">
+      <img src="WhatApp Image0.jpg" class="rounded bordered" alt="Rounded Image">
+      <div class="overlay">Rounded Image with Border</div>
+    </div>
+        <div class="image">
+      <img src="WhatApp Image1.jpg" class="circle bordered" alt="Rounded Image">
+      <div class="overlay">Circular Image</div>
+    </div>
+
+    <div class="image">
+      <img src="WhatApp Image2.jpg" class="grayscale" alt="Grayscale Image">
+      <div class="overlay">Grayscale Filter</div>
+    </div>
+
+    <div class="image">
+      <img src="WhatApp Image3.jpg" class="sepia" alt="Sepia Image">
+      <div class="overlay">Sepia Filter</div>
+    </div>
+
+    <div class="image">
+      <img src="WhatApp Image4.jpg" class="blur" alt="Blurred Image">
+      <div class="overlay">Blur Filter</div>
+    </div>
+
+    </div>
+</body>
+</html>
